@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoGeneratorSettingsState">
+    <option name="generateDefaultValue" value="true" />
+    <option name="ignoredFields">
+      <set>
+        <option value="" />
+      </set>
+    </option>
+    <option name="moduleName" value="ecom-platfrom" />
+    <option name="moduleNameToSettings">
+      <map>
+        <entry key="ecom-platfrom">
+          <value>
+            <ModuleSettings>
+              <option name="entityPackageName" value="com.techienukkad.ecomplatfrom.entity" />
+              <option name="entityParentDirectory" value="$PROJECT_DIR$/src/main/java" />
+              <option name="repositoryPackageName" value="com.techienukkad.ecomplatfrom.repository" />
+              <option name="repositoryParentDirectory" value="$PROJECT_DIR$/src/main/java" />
+            </ModuleSettings>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="removeEntityPrefix" value="" />
+    <option name="removeFieldPrefix" value="" />
+  </component>
+  <component name="DatabaseSettingsState">
+    <option name="database" value="classicmodels" />
+    <option name="driverClass" value="com.mysql.cj.jdbc.Driver" />
+    <option name="driverPath" value="C:\Users\bhavesh.kumar\.m2\repository\mysql\mysql-connector-java\8.0.16\mysql-connector-java-8.0.16.jar" />
+    <option name="port" value="9971" />
+    <option name="url" value="jdbc:mysql://{host}:{port}/{database}?useSSL=false&amp;useUnicode=true&amp;characterEncoding=UTF-8" />
+  </component>
+</project>

@@ -17,8 +17,6 @@ com\techienukkad\ecomplatfrom\entity\Offices.class
 com\techienukkad\ecomplatfrom\dto\ErrorDto.class
 com\techienukkad\ecomplatfrom\repository\OrderdetailsRepository.class
 com\techienukkad\ecomplatfrom\repository\OrdersRepository.class
-com\techienukkad\ecomplatfrom\entity\HibernateSequence.class
-com\techienukkad\ecomplatfrom\repository\HibernateSequenceRepository.class
 com\techienukkad\ecomplatfrom\dto\request\CustomerRegistrationRequest.class
 com\techienukkad\ecomplatfrom\EcomPlatfromApplication.class
 com\techienukkad\ecomplatfrom\entity\Orderdetails.class

@@ -2,10 +2,7 @@ package com.techienukkad.ecomplatfrom.entity;
 
 import lombok.Data;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 import java.io.Serializable;
 import java.math.BigDecimal;
 import java.sql.Date;
@@ -17,12 +14,14 @@ public class Payments implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
-    @Id
-    @Column(name = "customerNumber", nullable = false)
+    @EmbeddedId
+    private PaymentPk paymentPk;
+
+    @Column(name = "customerNumber", nullable = false,updatable = false,insertable = false)
     private Integer customerNumber;
 
-    @Id
-    @Column(name = "checkNumber", nullable = false)
+
+    @Column(name = "checkNumber", nullable = false,updatable = false,insertable = false)
     private String checkNumber;
 
     @Column(name = "paymentDate", nullable = false)

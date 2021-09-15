@@ -6,6 +6,7 @@ import com.techienukkad.ecomplatfrom.dto.ErrorDto;
 import com.techienukkad.ecomplatfrom.dto.request.CustomerRegistrationRequest;
 import com.techienukkad.ecomplatfrom.dto.response.GenericResponse;
 import com.techienukkad.ecomplatfrom.validator.RegistrationValidator;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -18,6 +19,7 @@ import com.techienukkad.ecomplatfrom.service.CustomerService;
 import java.util.ArrayList;
 import java.util.List;
 
+@Slf4j
 @RestController
 @RequestMapping(value = "/customer")
 public class CustomerController {
@@ -49,6 +51,7 @@ public class CustomerController {
             //here any other parameter in Generic response class
 
             //How to add @NotNull vala error
+            log.error("error",e);
             errorDto.setErrorCode(EcomConstatns.ERRORCODE);
             errorDto.setErrorMessage(EcomConstatns.FAILURE);
             errorDtoList.add(errorDto);

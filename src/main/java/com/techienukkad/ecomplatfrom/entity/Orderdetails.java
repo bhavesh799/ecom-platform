@@ -2,10 +2,7 @@ package com.techienukkad.ecomplatfrom.entity;
 
 import lombok.Data;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 import java.io.Serializable;
 import java.math.BigDecimal;
 
@@ -16,12 +13,14 @@ public class Orderdetails implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
-    @Id
-    @Column(name = "orderNumber", nullable = false)
+    @EmbeddedId
+    private OrderDetailPk orderDetailPk;
+
+    @Column(name = "orderNumber", nullable = false,updatable = false,insertable = false)
     private Integer orderNumber;
 
-    @Id
-    @Column(name = "productCode", nullable = false)
+
+    @Column(name = "productCode", nullable = false,updatable = false,insertable = false)
     private String productCode;
 
     @Column(name = "quantityOrdered", nullable = false)
