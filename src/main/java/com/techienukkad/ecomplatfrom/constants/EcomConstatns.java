@@ -10,5 +10,7 @@ public class EcomConstatns {
     public static final String mobileNoNullMessage = "Mobile number required !";
     public static final String postalCodeNullMessage="Pincode number can not be empty !";
     public static final String addressLine1NullMessage = "Address line1 can not be empty !";
+    public static final String employeeNoNullMessage = "Employee No can't be null !";
+    public static final String badRequestErrorCode = "400";
 
 }
